@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	<title>CSS 3D Test</title>
+	<link rel="stylesheet" href="../sass/blox.css" media="screen" title="no title" charset="utf-8">
+	<style type="text/css">
+
+		/* demo styles
+  --------------------------------------------- */
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font: 100% / 1.5 Arial;
+		}
+
+		.grid {
+			background: url("grid.png");
+		}
+
+		.box {
+			font-size: 200%;
+		}
+
+		/* centre the content in the case layers */
+
+		.title {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		.foreground, .background {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+  	}
+	}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<div class="compartment">
+			<div class="sideTop grid"></div>
+			<div class="sideLeft grid"></div>
+			<div class="background grid">
+				<div class="title">This is the background</div>
+			</div>
+			<div class="foreground">
+				<div class="title">This is the foreground</div>
+			</div>
+			<div class="sideRight grid"></div>
+			<div class="sideBottom grid"></div>
+		</div>
+		<div>
+			<h1>Title</h1>
+		</div>
+		<div class="compartment">
+			<div class="sideTop grid"></div>
+			<div class="sideLeft grid"></div>
+			<div class="background grid">
+				<div class="title">This is the background</div>
+			</div>
+			<div class="foreground">
+				<div class="title">This is the foreground</div>
+			</div>
+			<div class="sideRight grid"></div>
+			<div class="sideBottom grid"></div>
+		</div>
+		<script src="../js/blox.js" charset="utf-8"></script>
+</body>
+
+</html>

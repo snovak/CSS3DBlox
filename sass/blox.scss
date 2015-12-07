@@ -1,0 +1,62 @@
+@import "mixins";
+$boxZ: 500px;
+$boxY: 100%;
+$boxX: 100%;
+
+.box {
+  position: relative;
+  height: $boxY;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: $boxZ;
+  webkit-perspective: $boxZ;
+  .compartment {
+    position: relative;
+    height: $boxY;
+
+    .foreground {
+      -ms-transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+    .background {
+      -ms-transform: translateZ(- $boxZ);
+      -webkit-transform: translateZ(- $boxZ);
+      transform: translateZ(- $boxZ);
+    }
+    .sideTop {
+			position: absolute;
+			top: 0;
+      height: $boxZ;
+      width: $boxX;
+      transform-origin: top center;
+      @include rotate(x,-90);
+    }
+    .sideRight {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: $boxZ;
+      height: $boxY;
+      transform-origin: top right;
+      @include rotate(y,-90);
+    }
+    .sideBottom {
+      position: absolute;
+      bottom: 0;
+      height: $boxZ;
+      width: $boxX;
+      transform-origin: bottom center;
+      @include rotate(x,90);
+    }
+    .sideLeft {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: $boxZ;
+      height: $boxY;
+      transform-origin: top left;
+      @include rotate(y,90);
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.box {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 500px;
+  webkit-perspective: 500px; }
+  .box .compartment {
+    position: relative;
+    height: 100%; }
+    .box .compartment .foreground {
+      -ms-transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0); }
+    .box .compartment .background {
+      -ms-transform: translateZ(-500px);
+      -webkit-transform: translateZ(-500px);
+      transform: translateZ(-500px); }
+    .box .compartment .sideTop {
+      position: absolute;
+      top: 0;
+      height: 500px;
+      width: 100%;
+      transform-origin: top center;
+      -webkit-transform: rotateX(-90deg);
+      -moz-transform: rotateX(-90deg);
+      -ms-transform: rotateX(-90deg);
+      -o-transform: rotateX(-90deg);
+      transform: rotateX(-90deg); }
+    .box .compartment .sideRight {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 500px;
+      height: 100%;
+      transform-origin: top right;
+      -webkit-transform: rotateY(-90deg);
+      -moz-transform: rotateY(-90deg);
+      -ms-transform: rotateY(-90deg);
+      -o-transform: rotateY(-90deg);
+      transform: rotateY(-90deg); }
+    .box .compartment .sideBottom {
+      position: absolute;
+      bottom: 0;
+      height: 500px;
+      width: 100%;
+      transform-origin: bottom center;
+      -webkit-transform: rotateX(90deg);
+      -moz-transform: rotateX(90deg);
+      -ms-transform: rotateX(90deg);
+      -o-transform: rotateX(90deg);
+      transform: rotateX(90deg); }
+    .box .compartment .sideLeft {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 500px;
+      height: 100%;
+      transform-origin: top left;
+      -webkit-transform: rotateY(90deg);
+      -moz-transform: rotateY(90deg);
+      -ms-transform: rotateY(90deg);
+      -o-transform: rotateY(90deg);
+      transform: rotateY(90deg); }
+
+/*# sourceMappingURL=blox.css.map */

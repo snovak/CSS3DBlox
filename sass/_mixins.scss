@@ -1,0 +1,26 @@
+//MIXINS
+
+@mixin rotate($axis, $degrees){
+	@if ($axis == x) {
+		-webkit-transform: rotateX($degrees + deg);
+		-moz-transform: rotateX($degrees + deg);
+		-ms-transform: rotateX($degrees + deg);
+		-o-transform: rotateX($degrees + deg);
+		transform: rotateX($degrees + deg);
+	}
+	@if ($axis == y) {
+		-webkit-transform: rotateY($degrees + deg);
+		-moz-transform: rotateY($degrees + deg);
+		-ms-transform: rotateY($degrees + deg);
+		-o-transform: rotateY($degrees + deg);
+		transform: rotateY($degrees + deg);
+	}
+	@if ($axis == z) {
+		-webkit-transform: rotateX($degrees + deg);
+		-moz-transform: rotateX($degrees + deg);
+		-ms-transform: rotateX($degrees + deg);
+		-o-transform: rotateX($degrees + deg);
+		transform: rotateX($degrees + deg);
+	}
+
+}
