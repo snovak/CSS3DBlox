@@ -5,18 +5,18 @@
   overflow-y: auto;
   perspective: 500px;
   webkit-perspective: 500px; }
-  .box .compartment {
+  .box .blox {
     position: relative;
     height: 100%; }
-    .box .compartment .foreground {
+    .box .blox .foreground {
       -ms-transform: translateZ(0);
       -webkit-transform: translateZ(0);
       transform: translateZ(0); }
-    .box .compartment .background {
+    .box .blox .background {
       -ms-transform: translateZ(-500px);
       -webkit-transform: translateZ(-500px);
       transform: translateZ(-500px); }
-    .box .compartment .sideTop {
+    .box .blox .sideTop {
       position: absolute;
       top: 0;
       height: 500px;
@@ -27,7 +27,7 @@
       -ms-transform: rotateX(-90deg);
       -o-transform: rotateX(-90deg);
       transform: rotateX(-90deg); }
-    .box .compartment .sideRight {
+    .box .blox .sideRight {
       position: absolute;
       top: 0;
       right: 0;
@@ -39,7 +39,7 @@
       -ms-transform: rotateY(-90deg);
       -o-transform: rotateY(-90deg);
       transform: rotateY(-90deg); }
-    .box .compartment .sideBottom {
+    .box .blox .sideBottom {
       position: absolute;
       bottom: 0;
       height: 500px;
@@ -50,7 +50,7 @@
       -ms-transform: rotateX(90deg);
       -o-transform: rotateX(90deg);
       transform: rotateX(90deg); }
-    .box .compartment .sideLeft {
+    .box .blox .sideLeft {
       position: absolute;
       top: 0;
       left: 0;
@@ -62,5 +62,10 @@
       -ms-transform: rotateY(90deg);
       -o-transform: rotateY(90deg);
       transform: rotateY(90deg); }
+
+.edge {
+  position: relative;
+  z-index: 300;
+  transform: translateZ(0); }
 
 /*# sourceMappingURL=blox.css.map */

@@ -10,7 +10,7 @@ $boxX: 100%;
   overflow-y: auto;
   perspective: $boxZ;
   webkit-perspective: $boxZ;
-  .compartment {
+  .blox {
     position: relative;
     height: $boxY;
 
@@ -59,4 +59,9 @@ $boxX: 100%;
       @include rotate(y,90);
     }
   }
+}
+.edge {
+	position:relative;
+	z-index: 300;
+	transform: translateZ(0);
 }
